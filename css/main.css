@@ -1,0 +1,268 @@
+body{
+	background:#333;
+	font-family:"Microsoft YaHei";
+	overflow:hidden;
+	}
+/*子弹面板*/
+#bullet1,#bullet2{
+	-o-transition: all 100ms;
+	-moz-transition: all 100ms;
+	-webkit-transition: all 100ms;
+	}
+#left-framwork{
+	display:block;
+	width:40px;
+	height:80px;
+	background:#333;
+	color:#fff;position:fixed;bottom:0px;left:0px;
+	z-index:120;
+	}
+#right-framwork{
+	display:block;
+	width:40px;
+	height:80px;
+	background:#333;
+	color:#fff;position:fixed;bottom:0px;right:0px;
+	z-index:120;
+	}
+#left-framwork img,#right-framwork img{
+	padding-top:10px;
+	}
+#num1,#num2{
+	display:block;
+	width:35px;
+	height:35px;
+	position:absolute;
+	top:56px;
+	z-index:121;
+	color:#fff;
+	text-indent:0.65em;
+	font-family: arial,"Hiragino Sans GB","Microsoft Yahei",sans-serif;
+	}
+#win{
+	width: 191px;
+	height: 40px;
+	display:none;
+	color: #FFFFFF;
+	border: 1px solid #fff;
+	border-radius:3px;
+	position: fixed;
+	top: 10%;
+	line-height: 40px;
+	text-align: center;
+	z-index: 100;
+	left: 40%;
+	font-weight:bold;
+	background:#333;
+	opacity:0.9;
+	}
+#note{
+	width: 176px;
+	height: 40px;
+	display: none;
+	color: #fff;
+	line-height: 40px;
+	text-align: center;
+	background: #2E8B57;
+	border-radius: 3px;
+	position: fixed;
+	bottom: 4%;
+	right: 2.5%;
+	z-index: 200;
+	}
+#main{
+	background: #444;
+	width: 11%;
+	display:block;
+	border-radius:3px;
+	height: 641px;
+	position: absolute;
+	top: 6.1%;
+	right: 2.5%;
+	}
+.title{
+	display:block;
+	margin:10px auto;
+	text-align:center;
+	font-size:24px;
+	color:#fff;
+	width:90%;
+	padding-bottom:5px;
+	border-bottom:1px solid #D8CBCB;
+	}
+.men{
+	margin-left:16%;
+	float:left;
+	}
+.men h4{
+	display:block;
+	padding:0px;
+	margin:10px auto;
+	color:#fff;
+	}
+.note{
+	float:left;
+	margin-top:15px;
+	width:100%;
+	}
+#fenshu{
+	float:left;
+	display:none;
+	margin-top:15px;
+	width:100%;
+	}
+.note p,#fenshu p{
+	width: 90%;
+    text-align: left;
+    margin: 0px auto;
+    margin-left: 6%;
+    border-bottom: 1px solid #D8CBCB;
+	color:#fff;
+	}
+.note span{
+	 width: 90%;
+    display: block;
+    text-indent: 2em;
+    text-align: left;
+    margin: 8px auto;
+    margin-left: 6%;
+    color:#C5BFC0;
+	font-size:14px;
+}
+#start,#exit{
+	width:200px;
+	height:50px;
+	line-height:50px;
+	color:#fff;
+	font-size:20px;
+	background:#8B8B8B;
+	text-align:center;
+	border-radius:3px;
+	-o-transition: all 350ms;
+	-moz-transition: all 350ms;
+	-webkit-transition: all 350ms;
+	}
+#start p,#exit p{
+	padding:0px;
+	}
+#exit{
+	background:#CC5052;
+	}
+#start:hover{
+	background:#E78F00;
+	cursor:pointer;
+	-o-transition: all 350ms;
+	-moz-transition: all 350ms;
+	-webkit-transition: all 350ms;
+	}
+#exit:hover{
+	background:#E93B3E;
+	cursor:pointer;
+	-o-transition: all 350ms;
+	-moz-transition: all 350ms;
+	-webkit-transition: all 350ms;
+	}
+#menu{
+	position:absolute;
+	top: 33%;
+    left: 38%;
+	}
+@keyframes fade-in {  
+    0% {opacity: 0;}/*初始状态 透明度为0*/  
+    40% {opacity: 0.9;}/*过渡状态 透明度为0*/  
+    100% {opacity: 1;}/*结束状态 透明度为1*/  
+}  
+@-webkit-keyframes fade-in {/*针对webkit内核*/  
+    0% {opacity: 0;}  
+    40% {opacity: 0.9;}  
+    100% {opacity: 1;}  
+}  
+.wrapper {    
+    animation: fade-in;/*动画名称*/  
+    animation-duration: 1.53s;/*动画持续时间*/  
+    -webkit-animation:fade-in 1.53s;/*针对webkit内核*/  
+} 
+#tank1_fen,#tank2_fen{
+	border:none!important;
+	}
+.tank{
+	color:#fff;
+	float:left;
+	text-indent:2em;
+	margin:10px auto;
+	text-align:center;
+	}
+#mission{
+	width: 100%;
+    float: left;
+    margin: 15px auto;
+    text-align: center;
+    color: #fff;
+    font-size:35px;
+	}
+#end{
+	background:#333;
+	color:#fff;
+	display:none;
+	width:100%;
+	z-index:300;
+	text-align:center;
+	}
+#end p{
+	font-size:207px;
+	}
+#winner{
+	font-size:40px;
+	float: right;
+    margin-right: 3%;
+	}
+#question{
+	width:100%;
+	max-width:400px;
+	display:none;
+	background:#fff;
+	height:200px;
+	border-radius:4px;
+	position:fixed;
+	top:15%;
+	left:37%;
+	margin:9% auto;
+	z-index:400;
+	}
+#question p{
+	margin-top: 0px;
+	width:100%;
+	color:#fff;
+	background:#4F4F4F;
+	text-align:center;
+	font-size:28px;
+	padding-top:5px;
+	padding-bottom:5px;
+	}
+#question button{
+	width:100px;
+	height:40px;
+	border-radius:3.5px;
+	background:#fff;
+	border:1px solid #333;
+	margin-top:15%;
+	margin-left:15%;
+	}
+.slideShine {
+	 width: 790px;
+    text-align: right;
+    font-family: "Microsoft YaHei";
+    background: #DDDDDD -webkit-linear-gradient(left, #fff, #333) 0 0 no-repeat;
+    -webkit-background-size: 65px;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: rgba(255, 255, 255, 0.3);
+    -webkit-animation: slideShine 3s infinite;
+}
+@-webkit-keyframes slideShine {
+    0% {
+        background-position: 0 0;
+    }
+    100% {
+        background-position: 100% 100%;
+    }
+}

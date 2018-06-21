@@ -1,0 +1,69 @@
+﻿<!doctype html>
+<html>
+<head>
+<meta http-equiv="content-type" content="text/html;charset=utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+<meta content="always" name="referrer">
+<meta name="theme-color" content="#2932e1">
+<title>JS坦克大战</title>
+<link href="css/main.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+<!--子弹面板-->
+<div id="left-framwork"> <img src="img/bullet-up.png" alt="">
+  <div id="num2">15</div>
+</div>
+<div id="right-framwork"> <img src="img/bullet-up.png" alt="">
+  <div id="num1">15</div>
+</div>
+<div ID="win"> </div>
+<div ID="note"> </div>
+<div id="main">
+  <p class="title">坦克大战</p>
+  <div class="men"> <img src="img/tank1-up.png" alt="玩家1">
+    <h4>玩家一</h4>
+  </div>
+  <div class="men"> <img src="img/tank2-up.png" alt="玩家2">
+    <h4>玩家二</h4>
+  </div>
+  <div class="men"> <img src="img/ammo.png" alt="炮弹">
+    <h4>弹药箱</h4>
+  </div>
+  <div class="men"> <img src="img/win.png" alt="掩体">
+    <h4>掩体</h4>
+  </div>
+  <div class="note">
+    <p>玩法说明</p>
+    <span> 两个玩家可以想办法除掉另一方的玩家来获取利，每个玩家弹药有限，可以通过拾取地图上的弹药箱进行补充。游戏共三关，击毁对方加10分，先得到30分的玩家获胜。 </span> </div>
+  <div id="fenshu" class="wrapper">
+    <p>得分榜</p>
+    <div class="tank"> <b>玩家一</b>
+      <p id="tank1_fen">0</p>
+    </div>
+    <div class="tank"> <b>玩家二</b>
+      <p id="tank2_fen">0</p>
+    </div>
+    <div id="mission">
+    </div>
+  </div>
+</div>
+<div id="menu">
+  <div id="start">
+    <p>开始游戏</p>
+  </div>
+  <div id="exit">
+    <p>退出</p>
+  </div>
+</div>
+<div id="end">
+  <p>GAME OVER</p>
+  <b id="winner" class="slideShine"></b>
+</div>
+</body>
+<script src="js/map.js"></script>
+<script src="js/main.js"></script>
+<script src="js/move.js"></script>
+<script src="js/win.js"></script>
+<script src="js/bullet.js"></script>
+</html>
